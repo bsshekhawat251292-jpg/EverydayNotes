@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Everyday Notes" android:textSize="28sp" android:textStyle="bold"/>
+<TextView android:id="@+id/countText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0 notes"/>
+<EditText android:id="@+id/searchInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Search notes" android:singleLine="true"/>
+<HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+<LinearLayout android:id="@+id/categoryBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"/>
+</HorizontalScrollView>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+<Button android:id="@+id/addButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="＋ Add Note"/>
+<Button android:id="@+id/themeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Theme"/>
+</LinearLayout>
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/notesList" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

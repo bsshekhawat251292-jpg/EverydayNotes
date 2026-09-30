@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="8dp">
+<EditText android:id="@+id/titleInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Title"/>
+<EditText android:id="@+id/bodyInput" android:layout_width="match_parent" android:layout_height="140dp" android:gravity="top" android:hint="Write your note..." android:inputType="textMultiLine"/>
+<EditText android:id="@+id/categoryInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Category (e.g. Work, Personal)"/>
+</LinearLayout>
